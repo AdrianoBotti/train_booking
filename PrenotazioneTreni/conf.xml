@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- conf.xml -->
+<ParametriConfigurazioneXML background="ALICEBLUE" unitaTotale = "EUR" unitaSconto="%" 
+                            IPclient="127.0.0.1" IPserverLog="127.0.0.1" 
+                            portaServerLog="5555" font="Arial" fontTabella="Arial">
+  <finestra>
+    <double>700.0</double>
+    <double>650.0</double>
+  </finestra>
+  <tabella>
+    <double>250.0</double>
+    <double>675.0</double>
+  </tabella>
+  <percentualeSconto>20</percentualeSconto>
+  <intervalloGiorni>7</intervalloGiorni>
+  <maxBigliettiPrenotabili>10</maxBigliettiPrenotabili>  
+</ParametriConfigurazioneXML>

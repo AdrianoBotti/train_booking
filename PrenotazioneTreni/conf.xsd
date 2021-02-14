@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ParametriConfigurazioneXML">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="finestra">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="double" type="xs:double" minOccurs="2" maxOccurs="2"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tabella">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="double" type="xs:double" minOccurs="2" maxOccurs="2"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="percentualeSconto" type="xs:double"/>
+        	<xs:element name="intervalloGiorni" type="xs:integer"/>
+		<xs:element name="maxBigliettiPrenotabili" type="xs:integer"/>     
+	    </xs:sequence>
+            <xs:attribute name="background" type="xs:string"/>
+            <xs:attribute name="unitaTotale" type="xs:string"/>
+            <xs:attribute name="unitaSconto" type="xs:string"/>
+            <xs:attribute name="IPclient" type="xs:string"/>
+            <xs:attribute name="IPserverLog" type="xs:string"/>
+            <xs:attribute name="portaServerLog" type="xs:integer"/>
+            <xs:attribute name="font" type="xs:string"/>
+	    <xs:attribute name="fontTabella" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
